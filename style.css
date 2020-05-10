@@ -1,0 +1,112 @@
+@font-face {
+    font-family: effra-bold;
+    src: url(fonts/effra/bold.otf);
+}
+@font-face {
+    font-family: effra-regular;
+    src: url(fonts/effra/regular.otf);
+}
+@font-face {
+    font-family: europa;
+    src: url(fonts/europa.ttf);
+}
+
+html {
+    margin-bottom: 5%;
+    background-color: #FCF281;
+}
+
+h1 {
+    text-align: center;
+    font-size: 7vh;
+}
+h2 {
+    margin-top: 0;
+}
+h1, h2 {
+    font-family: effra-bold, sans-serif;
+}
+h3 {
+    font-family: effra-regular, sans-serif;
+}
+
+p {
+    font-family: europa, sans-serif;
+}
+
+svg {
+    display: block;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    transition: color 0.25s ease,
+                border-bottom 0.25s ease;
+    color: black;
+    border-bottom: 1px solid black;
+}
+a:hover {
+    transition: color 0.25s ease,
+                border-bottom 0.25s ease;
+    color: grey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.hidden {
+    display: none;
+}
+
+#tooltip {
+    position: absolute;
+    z-index: 1;
+    padding: 5px;
+    font-family: effra-regular, sans-serif;
+    color: white;
+    background-color: black;
+}
+
+#left {
+    position: fixed;
+    width: 43%;
+    float: left;
+    padding: 2.5%;
+}
+
+#right {
+    width: 48%;
+    float: right;
+}
+
+#left, #right {
+    display: inline-block;
+    border: 5px solid black;
+    background-color: white;
+}
+
+.tick text {
+    font-family: europa, sans-serif;
+}
+
+rect:hover,
+circle:hover {
+    cursor: pointer;
+}
+
+.barAxis line,
+.barAxis path,
+.barAxis text {
+    stroke: none;
+    fill: none;
+}
+
+.lineAxis path {
+    stroke: none;
+    fill: none;
+}
+
+.line {
+    fill: none;
+    stroke: black;
+    stroke-width: 3px;
+}

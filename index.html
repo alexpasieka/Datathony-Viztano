@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Anthony Fantano's Music Taste</title>
+    <meta charset="utf-8">
+
+    <script src="d3.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Anthony Fantano's Music Taste</h1>
+
+    <div id="tooltip" class="hidden"></div>
+
+    <div id="left">
+        <h2></h2>
+        <h3></h3>
+
+        <p>
+            Anthony Fantano, owner of The Needle Drop, is a popular music reviewer on YouTube. Seemingly a living music
+            encyclopedia, his knowledge his vast and his passion is evident. As one of the most respected figures in the
+            music appreciation scene, what are his favorite artists? Thanks to
+            <a href="https://www.kaggle.com/jaredarcilla/anthony-fantano-reviews" target="_blank">this</a>
+            dataset from Jared Arcilla, we can both visualize and analyze Anthony's music taste to find out. This list
+            is comprised of all artists that he has done album reviews for at least 3 times from the beginning of his
+            channel until mid-2018. This dataset is also almost certainly web scraped from Anthony's video titles and
+            descriptions, so many of his older reviews that don't include his explicit number rating are absent.
+        </p>
+
+        <svg id="lineChart" class="hidden"></svg>
+    </div>
+
+    <div id="right">
+        <svg id="barChart"></svg>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
